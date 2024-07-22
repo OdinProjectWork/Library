@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset=" wport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <script src="script.js" defer></script>
+    <div class="title">Interactive Library!</div>
+    <div class=Library></div>
+    <dialog id="book-entry">
+        <p> Fill out the book information right here!</p>
+        <form>
+            <div id="modal-container">
+                <p>
+                    <label for="author">
+                        <span>Author Name: </span>
+                    </label>
+                    <input type="text" id="author" name="author" required>
+                </p>
+                <p>
+                    <label for="title">
+                        <span>Title: </span>
+                    </label>
+                    <input type="text" id="title" name="title" required>
+                </p>
+                <p>
+                    <label for="pages">
+                        <span>Pages: </span>
+                    </label>
+                    <input type="text" id="pages" name="pages" required>
+                </p>
+                <div id="wrapper">
+                    <label for="read_or_not_radio"> Finished Reading?</label>
+                    <p>
+                        <input type="radio" name="yes_no" id="read" required>Yes
+                    </p>
+                    </p>
+                    <p>
+                        <input type="radio" name="yes_no" id="read" required>No
+                    </p>
+                    </p>
+                </div>
+            </div>
+            <button id = "cancel-button" value="cancel" formmethod="dialog">Cancel</button>
+            <button id="submit-button" value = "default" type="submit">Submit</button>
+        </form>
+    </dialog>
+    <button class="new-book">NEW BOOK</button>
+    <div class="form-popup" id="book-form">
+    </div>
+
+</body>
+
+</html>

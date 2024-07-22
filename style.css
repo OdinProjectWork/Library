@@ -1,0 +1,138 @@
+*{
+    padding:0;
+    margin:0;
+    font-family:Roboto
+}
+body{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: beige;
+    justify-content:center;
+ }
+
+h1{
+    font-size:24px;
+}
+
+.title{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+
+#modal-container{
+    margin-top:20px;
+}
+
+#modal-container p{
+    margin-top:20px;
+}
+
+#wrapper{
+    margin-top:20px;
+}
+
+.Library{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+    gap: 15px;
+    justify-self: space-between;
+    border: 1px solid #ccc;
+    padding:15px;
+    background-color: burlywood;
+    min-height: 550px;
+    width:100%;
+}
+
+#book-entry{
+    justify-content: center;
+    padding:20px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    align-items: center;
+}
+
+.book-card{
+    justify-self: center;
+    align-self: center;
+    width:30%;
+    background-color: aliceblue;
+    padding:20px;
+    width:250px;
+    height:250px;
+    font-size: 24px;
+    border-radius:5px;
+    border: solid 1px;
+    border-left: thick solid #6F4E37;
+}
+
+.new-book{
+    background-color: #78350f;
+    color:azure;
+    justify-self: center;
+    align-self: center;
+    padding:20px;
+    width:200px;
+    margin-top:50px;
+    border-radius: 5px;
+    border: 1px solid;
+}
+
+::backdrop {
+    opacity: 20;
+}
+
+.title{
+    height:25vh;
+    font-size: 3em;
+}
+
+button:hover{
+    animation: bubble 1s ease-out;
+}
+
+#submit-button{
+    background-color: #90EE90;
+    padding:10px;
+    color:white;
+    border: 1px solid;
+    font-family: Roboto;
+}
+
+#cancel-button{
+    background-color: #CF142b;
+    padding:10px;
+    color:white;
+    border: 1px solid;
+    font-family:Roboto;
+}
+
+.delete-button{
+    background-color: #CF142b;
+    padding:10px;
+    margin-top:30%;
+    color:white;
+    border: 1px solid;
+}
+
+.read-button{
+    background-color:#6F4E37;
+    padding:10px;
+    color: white;
+    border: 1px solid;
+}
+
+@keyframes bubble {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
